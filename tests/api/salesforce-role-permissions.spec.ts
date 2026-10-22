@@ -1,7 +1,7 @@
 ﻿import { test, expect } from '@playwright/test';
 import { SalesforceClient } from '../../src/api/SalesforceClient';
 
-test('authorized user can create a Contact; restricted user is denied', async () => {
+test('authorized user can create a Contact; restricted user is denied  @api @roles @simulation', async () => {
   const originalFetch = globalThis.fetch;
 
   process.env.SF_INSTANCE_URL = 'https://example.my.salesforce.com';

@@ -7,7 +7,7 @@ type Employee = {
   active: boolean;
 };
 
-test('simulated employee lifecycle: authenticate, create, authorize, update, verify and delete', async () => {
+test('simulated employee lifecycle: authenticate, create, authorize, update, verify and delete  @api @roles @simulation', async () => {
   // Mock application state. This is not a live Salesforce integration.
   let authenticated = false;
   const employees = new Map<string, Employee>();

@@ -1,7 +1,7 @@
 ﻿import { test, expect } from '@playwright/test';
 import { SalesforceClient } from '../../src/api/SalesforceClient';
 
-test('SalesforceClient creates a record using the Salesforce REST API', async () => {
+test('SalesforceClient creates a record using the Salesforce REST API  @api @roles @simulation', async () => {
   const originalFetch = globalThis.fetch;
   let capturedUrl = '';
   let capturedMethod = '';
