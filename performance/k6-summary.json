@@ -1,0 +1,173 @@
+{
+    "metrics": {
+        "http_req_duration": {
+            "max": 35.2156,
+            "p(90)": 0.6316,
+            "p(95)": 1.0047,
+            "avg": 0.2877467214503559,
+            "min": 0,
+            "med": 0
+        },
+        "iteration_duration": {
+            "max": 35.2156,
+            "p(90)": 0.9999,
+            "p(95)": 1.1396249999999999,
+            "avg": 0.4128629320569286,
+            "min": 0,
+            "med": 0.5359
+        },
+        "checks": {
+            "passes": 94432,
+            "fails": 0,
+            "value": 1
+        },
+        "http_req_duration{endpoint:employee_create}": {
+            "max": 35.2156,
+            "p(90)": 0.6262600000000001,
+            "p(95)": 1.004,
+            "avg": 0.28467585402079393,
+            "min": 0,
+            "med": 0,
+            "thresholds": {
+                "p(95)<1000": false
+            }
+        },
+        "iterations": {
+            "count": 47216,
+            "rate": 4721.35401745569
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_receiving": {
+            "p(90)": 0,
+            "p(95)": 0.5437,
+            "avg": 0.046436987461877445,
+            "min": 0,
+            "med": 0,
+            "max": 5.7515
+        },
+        "http_req_sending": {
+            "avg": 0.016663057014571322,
+            "min": 0,
+            "med": 0,
+            "max": 1.9151,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "vus_max": {
+            "value": 2,
+            "min": 2,
+            "max": 2
+        },
+        "http_req_connecting": {
+            "min": 0,
+            "med": 0,
+            "max": 3.959,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.00015300957302609284
+        },
+        "http_req_blocked": {
+            "p(95)": 0,
+            "avg": 0.003761815909861066,
+            "min": 0,
+            "med": 0,
+            "max": 3.959,
+            "p(90)": 0
+        },
+        "data_sent": {
+            "count": 9441222,
+            "rate": 944073.0137959812
+        },
+        "http_req_duration{endpoint:login}": {
+            "p(90)": 0.6386,
+            "p(95)": 1.0056500000000002,
+            "avg": 0.2908064225614138,
+            "min": 0,
+            "med": 0,
+            "max": 35.2156,
+            "thresholds": {
+                "p(95)<1000": false
+            }
+        },
+        "http_reqs": {
+            "count": 47216,
+            "rate": 4721.35401745569
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 0.2877467214503559,
+            "min": 0,
+            "med": 0,
+            "max": 35.2156,
+            "p(90)": 0.6316,
+            "p(95)": 1.0047
+        },
+        "http_req_waiting": {
+            "max": 35.2156,
+            "p(90)": 0.5904,
+            "p(95)": 0.9978,
+            "avg": 0.22464667697390756,
+            "min": 0,
+            "med": 0
+        },
+        "data_received": {
+            "count": 10809626,
+            "rate": 1080906.2847825626
+        },
+        "vus": {
+            "value": 2,
+            "min": 2,
+            "max": 2
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 47216,
+            "thresholds": {
+                "rate<0.01": false
+            },
+            "value": 0
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "employee creation returns HTTP 201": {
+                    "path": "::employee creation returns HTTP 201",
+                    "id": "d32a9c687b37b892eea3e6fc89302b7a",
+                    "passes": 23565,
+                    "fails": 0,
+                    "name": "employee creation returns HTTP 201"
+                },
+                "created employee has an ID": {
+                    "fails": 0,
+                    "name": "created employee has an ID",
+                    "path": "::created employee has an ID",
+                    "id": "f826a917d832c8cc11f1136a519410ee",
+                    "passes": 23565
+                },
+                "login returns HTTP 200": {
+                    "passes": 23651,
+                    "fails": 0,
+                    "name": "login returns HTTP 200",
+                    "path": "::login returns HTTP 200",
+                    "id": "44c52c497ba2027f18d5ad130bb84be8"
+                },
+                "login returns a mock token": {
+                    "name": "login returns a mock token",
+                    "path": "::login returns a mock token",
+                    "id": "58b2fbb7b0eac6d4dd4d7e8a4e160bd0",
+                    "passes": 23651,
+                    "fails": 0
+                }
+            }
+    }
+}
