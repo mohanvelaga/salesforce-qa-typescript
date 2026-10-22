@@ -1,0 +1,23 @@
+{
+	"name": "salesforce-qa-automation",
+	"version": "1.0.0",
+	"private": true,
+	"description": "Salesforce QA Automation Framework using Playwright and TypeScript",
+	"scripts": {
+		"test": "playwright test",
+		"test:ui": "playwright test tests/ui",
+		"test:api": "playwright test tests/api",
+		"test:smoke": "playwright test --grep @smoke",
+		"test:roles": "playwright test --grep @roles",
+		"typecheck": "tsc --noEmit",
+		"report": "playwright show-report",
+		"k6:smoke": "k6 run performance/salesforce-api.js"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.55.0",
+		"@types/node": "^22.0.0",
+		"dotenv": "^16.4.7",
+		"typescript": "^5.7.0",
+		"undici": "^8.12.3"
+	}
+}
