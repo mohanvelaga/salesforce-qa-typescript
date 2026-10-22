@@ -1,7 +1,7 @@
-﻿import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import { SalesforceClient } from '../../src/api/SalesforceClient';
 
-test('SalesforceClient supports create, retrieve, update and delete  @api @roles @simulation', async () => {
+test('SalesforceClient supports create, retrieve, update and delete  @api @simulation', async () => {
   const originalFetch = globalThis.fetch;
   const calls: Array<{ url: string; method: string; body?: string }> = [];
 

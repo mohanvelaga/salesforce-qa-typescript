@@ -1,7 +1,7 @@
-﻿import { test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import { SalesforceClient } from '../../src/api/SalesforceClient';
 
-test('SalesforceClient reports API errors clearly  @api @roles @simulation', async () => {
+test('SalesforceClient reports API errors clearly  @api @simulation', async () => {
   const originalFetch = globalThis.fetch;
 
   process.env.SF_INSTANCE_URL = 'https://example.my.salesforce.com';
